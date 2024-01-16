@@ -37,7 +37,7 @@ body {
 .navbar li a {
     color: white;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 22px;
     display: inline-block;
     position: relative;
 }
@@ -55,11 +55,40 @@ body {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-.navbar li a:hover{
+
+.navbar li a:hover {
     color: #0EA5E9;
 }
+
 .navbar li a:hover::after {
     color: #0EA5E9;
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 100px 0px 100px;
+}
+
+.info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-right: 100px;
+    justify-content: center;
+}
+
+.info h1 span, .auto-type{
+    color: #0EA5E9;
+}
+
+.info p{
+    margin-top: 20px;
+}
+.personal-image img{
+    height: 500px;
 }
